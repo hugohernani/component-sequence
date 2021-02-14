@@ -25,3 +25,5 @@ component_sequence-*.tar
 
 # Temporary files for e.g. tests
 /tmp
+
+/.elixir_ls
