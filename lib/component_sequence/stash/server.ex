@@ -1,6 +1,6 @@
-defmodule ComponentSequence.Server do
+defmodule ComponentSequence.Stash.Server do
   use GenServer
-  alias ComponentSequence.Impl
+  alias ComponentSequence.Stash.Impl
 
   def init(initial_number) do
     {:ok, initial_number}
