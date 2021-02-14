@@ -1,4 +1,4 @@
-defmodule ComponentSequence do
+defmodule ComponentSequence.API do
   @server ComponentSequence.Server
 
   def start_link(current_number) do

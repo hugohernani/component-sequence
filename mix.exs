@@ -15,7 +15,7 @@ defmodule ComponentSequence.MixProject do
   def application do
     [
       extra_applications: [:logger],
-      mod: {ComponentSequence.Application, []}
+      mod: {SequenceApplication, []}
     ]
   end
 
