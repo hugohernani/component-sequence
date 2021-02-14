@@ -2,7 +2,7 @@ defmodule ComponentSequence.API do
   @server ComponentSequence.Server
 
   def start_link(current_number) do
-    GenServer.start_link(@server, current_number, name: @server)
+    GenServer.start_link(@server, nil, name: @server)
   end
 
   def next_number do
