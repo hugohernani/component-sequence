@@ -15,7 +15,7 @@ defmodule ComponentSequence.Server do
   end
 
   def terminate(_reason, current_number) do
-    Sequence.Stash.API.update(current_number)
+    ComponentSequence.Stash.API.update(current_number)
   end
 
   def format_status(_reason, [_pdict, state]) do

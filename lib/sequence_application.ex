@@ -7,11 +7,11 @@ defmodule SequenceApplication do
     children = [
       %{
         id: ComponentSequence.Stash.API,
-        start: {ComponentSequence.Stash.API, :start_link, 123}
+        start: {ComponentSequence.Stash.API, :start_link, [123]}
       },
       %{
         id: ComponentSequence.API,
-        start: {ComponentSequence.API, :start_link, nil}
+        start: {ComponentSequence.API, :start_link, [nil]}
       }
     ]
 
