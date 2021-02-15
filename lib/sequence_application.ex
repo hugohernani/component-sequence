@@ -7,7 +7,11 @@ defmodule SequenceApplication do
     children = [
       %{
         id: ComponentSequence.Stash.API,
-        start: {ComponentSequence.Stash.API, :start_link, [123]}
+        start:
+          {ComponentSequence.Stash.API, :start_link,
+           [
+             Application.get_env(:component_sequence, :initial_number)
+           ]}
       },
       %{
         id: ComponentSequence.API,

@@ -2,7 +2,7 @@ defmodule ComponentSequence.Server do
   use GenServer
   alias ComponentSequence.Impl
 
-  def init(initial_number) do
+  def init(_) do
     {:ok, ComponentSequence.Stash.API.get()}
   end
 
